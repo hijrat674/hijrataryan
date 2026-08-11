@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="card" x1="16" y1="12" x2="112" y2="116" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34364a"/>
+      <stop offset="1" stop-color="#232635"/>
+    </linearGradient>
+    <linearGradient id="orbit" x1="24" y1="22" x2="102" y2="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6f86ff"/>
+      <stop offset="1" stop-color="#6a7cf0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#d6f7b0" stop-opacity="1"/>
+      <stop offset="1" stop-color="#d6f7b0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="10" y="10" width="108" height="108" rx="30" fill="url(#card)"/>
+  <rect x="10" y="10" width="108" height="108" rx="30" fill="none" stroke="#4f5370" stroke-width="2"/>
+
+  <ellipse cx="67" cy="64" rx="42" ry="22" transform="rotate(-28 67 64)" fill="none" stroke="url(#orbit)" stroke-width="2.2"/>
+  <ellipse cx="63" cy="64" rx="20" ry="39" transform="rotate(20 63 64)" fill="none" stroke="url(#orbit)" stroke-width="2"/>
+
+  <circle cx="31" cy="41" r="13" fill="url(#glow)"/>
+  <circle cx="45" cy="91" r="13" fill="url(#glow)"/>
+  <circle cx="31" cy="41" r="7.5" fill="#cfeea0" stroke="#b2d886" stroke-width="1.5"/>
+  <circle cx="45" cy="91" r="7.5" fill="#cfeea0" stroke="#b2d886" stroke-width="1.5"/>
+
+  <text x="48" y="82" fill="#f8f7f2" font-size="44" font-weight="700" font-family="Georgia, 'Times New Roman', serif">H</text>
+  <text x="61" y="82" fill="#d9d2ff" font-size="44" font-weight="700" font-family="Georgia, 'Times New Roman', serif">A</text>
+</svg>
