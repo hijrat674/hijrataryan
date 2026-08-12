@@ -90,7 +90,7 @@
 
                     <div class="portrait-stage">
                         <div class="portrait-shape">
-                            <img src="Images/20250405_230105.jpg" alt="Portrait of Hijratullah Aryan">
+                            <img src="Images/hijratullah-profile-cutout.png" alt="Portrait of Hijratullah Aryan">
                         </div>
 
                         <div class="profile-card">
@@ -150,28 +150,36 @@
 
                 <div class="service-grid">
                     <article class="service-card">
-                        <span class="service-icon icon-green">&lt;/&gt;</span>
+                        <span class="service-icon icon-green" aria-label="Web development">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9-3 3 3 3M16 9l3 3-3 3M14 5l-4 14"/></svg>
+                        </span>
                         <h3>Web Development</h3>
                         <p>Building responsive websites and web systems with Laravel, PHP, HTML, CSS, JavaScript, and MySQL.</p>
                         <span class="service-link">Modern web stacks</span>
                     </article>
 
                     <article class="service-card">
-                        <span class="service-icon icon-purple">IT</span>
+                        <span class="service-icon icon-purple" aria-label="IT support">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M8 10h.01M11 10h5"/></svg>
+                        </span>
                         <h3>IT Support</h3>
                         <p>Managing devices, solving technical issues, maintaining software, and supporting day-to-day computer operations.</p>
                         <span class="service-link">Reliable systems support</span>
                     </article>
 
                     <article class="service-card">
-                        <span class="service-icon icon-yellow">DB</span>
+                        <span class="service-icon icon-yellow" aria-label="Database management">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="7" ry="3"/><path d="M5 5v7c0 1.7 3.1 3 7 3s7-1.3 7-3V5M5 12v7c0 1.7 3.1 3 7 3s7-1.3 7-3v-7"/></svg>
+                        </span>
                         <h3>Database Management</h3>
                         <p>Handling MySQL, SQL, Microsoft Access, reports, backups, and structured digital record systems.</p>
                         <span class="service-link">Clean data and reporting</span>
                     </article>
 
                     <article class="service-card">
-                        <span class="service-icon icon-red">TR</span>
+                        <span class="service-icon icon-red" aria-label="Training and coordination">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20v-1.5A4.5 4.5 0 0 1 7.5 14h3A4.5 4.5 0 0 1 15 18.5V20M16 7h5M18.5 4.5v5"/></svg>
+                        </span>
                         <h3>Training & Coordination</h3>
                         <p>Teaching computer and English skills, guiding users, and improving team confidence with technology.</p>
                         <span class="service-link">People-focused delivery</span>
@@ -280,26 +288,32 @@
 
                 <article class="summary-panel panel-skills">
                     <h2>Skills</h2>
-                    <div class="skill-chip-grid">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>Laravel</span>
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                        <span>Python</span>
-                        <span>Java</span>
-                        <span>Networking</span>
-                        <span>IT Support</span>
-                        <span>Canva</span>
-                        <span>Photoshop</span>
-                    </div>
+                    <section class="skill-group" aria-labelledby="technical-skills-title">
+                        <h3 class="skill-group-title" id="technical-skills-title">Technical Skills</h3>
+                        <div class="skill-chip-grid">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Python</span>
+                            <span>Java</span>
+                            <span>Networking</span>
+                            <span>IT Support</span>
+                            <span>Canva</span>
+                            <span>Photoshop</span>
+                        </div>
+                    </section>
 
-                    <div class="language-row">
-                        <span>Pashto</span>
-                        <span>Dari</span>
-                        <span>English</span>
-                    </div>
+                    <section class="skill-group language-group" aria-labelledby="languages-title">
+                        <h3 class="skill-group-title" id="languages-title">Languages</h3>
+                        <div class="language-row">
+                            <span>Pashto</span>
+                            <span>Dari</span>
+                            <span>English</span>
+                        </div>
+                    </section>
                 </article>
             </section>
 
@@ -315,7 +329,15 @@
                 </div>
 
                 <div class="cta-actions">
-                    <a class="button button-primary" href="mailto:hijratullaharyan674@gmail.com">Get In Touch</a>
+                    <div class="contact-card">
+                        <span class="contact-card-label">Contact directly</span>
+                        <a class="contact-main-link" href="mailto:hijratullaharyan674@gmail.com">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                            <span>hijratullaharyan674@gmail.com</span>
+                        </a>
+                        <a class="contact-phone-link" href="tel:+93708461626">+93 70 846 1626</a>
+                    </div>
+                    <a class="button button-primary contact-button" href="mailto:hijratullaharyan674@gmail.com">Start a Conversation <span aria-hidden="true">↗</span></a>
                     <div class="cta-links">
                         <a href="mailto:hijratullaharyan674@gmail.com">Email</a>
                         <a href="tel:+93708461626">Call</a>

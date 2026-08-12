@@ -22,9 +22,8 @@ const applyTheme = (theme, persist = true) => {
     }
 };
 
-const storedTheme = localStorage.getItem(themeStorageKey);
-const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-applyTheme(storedTheme || (systemPrefersDark ? "dark" : "light"), false);
+// Always open the portfolio in its light theme; visitors can still switch themes manually.
+applyTheme("light", false);
 
 if (themeToggle) {
     themeToggle.addEventListener("click", () => {
