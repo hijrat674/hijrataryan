@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="parking-title parking-desc">
+  <title id="parking-title">Parking space availability website illustrated preview</title>
+  <desc id="parking-desc">An original pastel illustration of a parking website showing nearby spaces, availability, hourly rates, and a simple reservation panel.</desc>
+  <defs>
+    <linearGradient id="parking-bg" x2="1" y2="1">
+      <stop stop-color="#eaf3ff"/>
+      <stop offset="1" stop-color="#f3eaff"/>
+    </linearGradient>
+    <linearGradient id="parking-map" x2="1" y2="1">
+      <stop stop-color="#eff8f4"/>
+      <stop offset="1" stop-color="#e4f0fb"/>
+    </linearGradient>
+    <linearGradient id="parking-action" x2="1">
+      <stop stop-color="#5a6fd8"/>
+      <stop offset="1" stop-color="#745fce"/>
+    </linearGradient>
+    <filter id="parking-shadow" x="-25%" y="-25%" width="150%" height="165%">
+      <feDropShadow dy="16" stdDeviation="20" flood-color="#35446f" flood-opacity=".13"/>
+    </filter>
+    <filter id="parking-card-shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dy="7" stdDeviation="9" flood-color="#566080" flood-opacity=".1"/>
+    </filter>
+  </defs>
+  <rect width="960" height="600" fill="url(#parking-bg)"/>
+  <circle cx="54" cy="82" r="148" fill="#cde1fb" opacity=".66"/>
+  <circle cx="912" cy="558" r="178" fill="#dfd3f5" opacity=".72"/>
+  <path d="M760 0H960V174C911 190 858 174 829 136C797 94 797 42 760 0Z" fill="#f7e0c9" opacity=".45"/>
+  <g font-family="Arial, sans-serif">
+    <rect x="80" y="68" width="800" height="464" rx="30" fill="#fff" filter="url(#parking-shadow)"/>
+    <circle cx="110" cy="95" r="4" fill="#d7ddea"/>
+    <circle cx="126" cy="95" r="4" fill="#d7ddea"/>
+    <circle cx="142" cy="95" r="4" fill="#d7ddea"/>
+
+    <rect x="108" y="122" width="744" height="54" rx="16" fill="#f8f9fd"/>
+    <rect x="127" y="135" width="30" height="30" rx="9" fill="#596fd5"/>
+    <text x="142" y="157" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">P</text>
+    <text x="169" y="155" font-size="18" font-weight="700" fill="#29324b">Parkly</text>
+    <g font-size="12" fill="#778096">
+      <text x="430" y="154">Find parking</text>
+      <text x="526" y="154">My bookings</text>
+      <text x="621" y="154">Help</text>
+    </g>
+    <rect x="755" y="133" width="78" height="32" rx="16" fill="#e9edff"/>
+    <text x="794" y="154" text-anchor="middle" font-size="11" font-weight="700" fill="#5368c8">SIGN IN</text>
+
+    <text x="109" y="218" font-size="25" font-weight="700" fill="#29324b">Find a space nearby.</text>
+    <text x="109" y="241" font-size="13" fill="#81899b">Live availability for a smoother arrival</text>
+    <rect x="109" y="260" width="344" height="47" rx="14" fill="#f6f7fb" stroke="#e3e6ef"/>
+    <circle cx="132" cy="283.5" r="7" fill="none" stroke="#7d87a1" stroke-width="2"/>
+    <path d="M127 290L137 290L132 296Z" fill="#7d87a1"/>
+    <text x="150" y="288" font-size="13" fill="#737c90">Central business district</text>
+    <rect x="361" y="267" width="84" height="33" rx="11" fill="url(#parking-action)"/>
+    <text x="403" y="288" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">SEARCH</text>
+
+    <rect x="109" y="329" width="344" height="168" rx="18" fill="url(#parking-map)"/>
+    <path d="M109 379C163 360 197 387 246 370C298 352 330 305 371 329C400 346 424 351 453 345M184 329C180 373 201 400 199 497M286 329C296 367 278 407 290 497M389 329C375 378 401 419 389 497" fill="none" stroke="#fff" stroke-width="10"/>
+    <path d="M109 379C163 360 197 387 246 370C298 352 330 305 371 329C400 346 424 351 453 345M184 329C180 373 201 400 199 497M286 329C296 367 278 407 290 497M389 329C375 378 401 419 389 497" fill="none" stroke="#ccdfe1" stroke-width="2" stroke-dasharray="6 7"/>
+    <g filter="url(#parking-card-shadow)">
+      <path d="M223 369C223 350 238 337 256 337C274 337 289 350 289 369C289 391 256 416 256 416C256 416 223 391 223 369Z" fill="#6575d7"/>
+      <circle cx="256" cy="369" r="14" fill="#fff"/>
+      <text x="256" y="375" text-anchor="middle" font-size="17" font-weight="700" fill="#5b6dd0">P</text>
+    </g>
+    <g filter="url(#parking-card-shadow)">
+      <path d="M350 419C350 404 362 393 377 393C392 393 404 404 404 419C404 437 377 457 377 457C377 457 350 437 350 419Z" fill="#58a985"/>
+      <circle cx="377" cy="419" r="11" fill="#fff"/>
+      <text x="377" y="424" text-anchor="middle" font-size="14" font-weight="700" fill="#439271">P</text>
+    </g>
+    <rect x="122" y="459" width="147" height="26" rx="13" fill="#fff" fill-opacity=".9"/>
+    <circle cx="138" cy="472" r="5" fill="#5eb28b"/>
+    <text x="150" y="476" font-size="10" fill="#56746c">12 spaces available</text>
+
+    <rect x="479" y="202" width="352" height="295" rx="20" fill="#fafafe" stroke="#e7e8f0"/>
+    <text x="501" y="232" font-size="12" font-weight="700" letter-spacing="1.4" fill="#8a91a3">NEARBY PARKING</text>
+    <rect x="501" y="251" width="308" height="75" rx="15" fill="#fff" stroke="#dfe3ee" filter="url(#parking-card-shadow)"/>
+    <rect x="515" y="265" width="48" height="47" rx="12" fill="#e8edff"/>
+    <text x="539" y="296" text-anchor="middle" font-size="20" font-weight="700" fill="#5d70d0">P</text>
+    <text x="578" y="279" font-size="14" font-weight="700" fill="#30384f">City Center Garage</text>
+    <text x="578" y="300" font-size="11" fill="#8a91a0">2 min walk</text>
+    <rect x="712" y="267" width="78" height="25" rx="12.5" fill="#e7f6ed"/>
+    <text x="751" y="284" text-anchor="middle" font-size="10" font-weight="700" fill="#4b916d">12 OPEN</text>
+    <text x="790" y="311" text-anchor="end" font-size="12" font-weight="700" fill="#536079">$2 / hour</text>
+
+    <rect x="501" y="338" width="308" height="67" rx="15" fill="#fff"/>
+    <rect x="515" y="348" width="46" height="46" rx="12" fill="#eaf6f1"/>
+    <text x="538" y="378" text-anchor="middle" font-size="18" font-weight="700" fill="#4e9a7a">P</text>
+    <text x="577" y="364" font-size="14" font-weight="700" fill="#30384f">Garden Lot</text>
+    <text x="577" y="385" font-size="11" fill="#8a91a0">5 min walk</text>
+    <text x="790" y="377" text-anchor="end" font-size="12" font-weight="700" fill="#536079">$1.50 / hour</text>
+
+    <rect x="501" y="417" width="308" height="58" rx="14" fill="#f1effc"/>
+    <text x="520" y="440" font-size="11" fill="#77728d">Selected arrival</text>
+    <text x="520" y="459" font-size="13" font-weight="700" fill="#4b4763">Today, 10:30 AM</text>
+    <rect x="686" y="429" width="105" height="35" rx="12" fill="url(#parking-action)"/>
+    <text x="738.5" y="451" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">RESERVE</text>
+  </g>
+</svg>

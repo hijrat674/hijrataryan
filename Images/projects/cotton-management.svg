@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="cotton-title cotton-desc">
+  <title id="cotton-title">Cotton management dashboard illustrated preview</title>
+  <desc id="cotton-desc">An original illustration of a cotton operations dashboard showing daily intake, warehouse inventory, production progress, quality grades, and recent batches.</desc>
+  <defs>
+    <linearGradient id="cotton-bg" x2="1" y2="1">
+      <stop stop-color="#e8f5ec"/>
+      <stop offset="1" stop-color="#eef0ff"/>
+    </linearGradient>
+    <linearGradient id="cotton-card" x2="1" y2="1">
+      <stop stop-color="#f3faf5"/>
+      <stop offset="1" stop-color="#e6f2ea"/>
+    </linearGradient>
+    <linearGradient id="cotton-progress" x2="1">
+      <stop stop-color="#5a9871"/>
+      <stop offset="1" stop-color="#84b699"/>
+    </linearGradient>
+    <filter id="cotton-shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dy="16" stdDeviation="20" flood-color="#345b46" flood-opacity=".13"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="600" fill="url(#cotton-bg)"/>
+  <circle cx="79" cy="85" r="143" fill="#c9e7d2" opacity=".65"/>
+  <circle cx="912" cy="552" r="170" fill="#d9ddf8" opacity=".72"/>
+  <g font-family="Arial, sans-serif">
+    <rect x="86" y="72" width="788" height="456" rx="28" fill="#fff" filter="url(#cotton-shadow)"/>
+
+    <!-- Navigation rail -->
+    <path d="M114 72H157V528H114Q86 528 86 500V100Q86 72 114 72Z" fill="#335f48"/>
+    <rect x="105" y="94" width="33" height="33" rx="10" fill="#e8f6eb"/>
+    <path d="M121 117c-8-3-9-12-3-16 4-3 8 0 8 4 2-4 8-5 10 0 2 6-4 11-15 12Z" fill="#6ba27c"/>
+    <path d="M121 116v6" stroke="#335f48" stroke-width="2" stroke-linecap="round"/>
+    <rect x="102" y="158" width="39" height="39" rx="11" fill="#fff" fill-opacity=".18"/>
+    <path d="M112 169h8v8h-8zm12 0h8v8h-8zm-12 12h8v7h-8zm12 0h8v7h-8z" fill="#d8eee0"/>
+    <path d="M111 233h22M111 240h14M111 247h18" stroke="#a8cab5" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M111 291h22v19h-22zM115 286v7M129 286v7" fill="none" stroke="#a8cab5" stroke-width="2" stroke-linecap="round"/>
+    <path d="M111 354h22M114 350v9M122 344v15M130 347v12" fill="none" stroke="#a8cab5" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="122" cy="467" r="14" fill="#fff" fill-opacity=".13"/>
+    <path d="M116 468l4 4 8-10" fill="none" stroke="#c6e4d1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Header -->
+    <text x="183" y="119" font-size="25" font-weight="700" fill="#263b30">Cotton operations</text>
+    <text x="183" y="144" font-size="13" fill="#819087">Today&#39;s intake, stock and production</text>
+    <rect x="742" y="102" width="94" height="32" rx="16" fill="#eef6f0"/>
+    <circle cx="760" cy="118" r="5" fill="#68a27a"/>
+    <text x="773" y="122" font-size="11" font-weight="700" fill="#517160">LIVE DATA</text>
+
+    <!-- Summary cards -->
+    <rect x="183" y="170" width="198" height="97" rx="17" fill="url(#cotton-card)"/>
+    <rect x="201" y="188" width="35" height="35" rx="10" fill="#dbeee1"/>
+    <path d="M210 209h17M213 205v8M218 199v14M223 202v11" stroke="#4f8662" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="249" y="202" font-size="12" fill="#688173">DAILY INTAKE</text>
+    <text x="201" y="248" font-size="27" font-weight="700" fill="#2e5941">18.4 t</text>
+    <text x="308" y="246" font-size="11" font-weight="700" fill="#4f9567">+8% today</text>
+
+    <rect x="394" y="170" width="198" height="97" rx="17" fill="#f4f2fb"/>
+    <rect x="412" y="188" width="35" height="35" rx="10" fill="#e4e1f4"/>
+    <path d="M420 198h19v15h-19zm0 5h19M429.5 198v15" fill="none" stroke="#6d6595" stroke-width="2"/>
+    <text x="460" y="202" font-size="12" fill="#77728d">INVENTORY</text>
+    <text x="412" y="248" font-size="27" font-weight="700" fill="#514a76">126 t</text>
+    <text x="514" y="246" font-size="11" font-weight="700" fill="#77709e">74% full</text>
+
+    <rect x="605" y="170" width="231" height="97" rx="17" fill="#fff4e8"/>
+    <rect x="623" y="188" width="35" height="35" rx="10" fill="#f5dfc7"/>
+    <path d="M631 213v-12l7 4 6-7v15M629 214h21" fill="none" stroke="#a97547" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="671" y="202" font-size="12" fill="#947d68">PRODUCTION</text>
+    <text x="623" y="248" font-size="27" font-weight="700" fill="#76573d">82%</text>
+    <rect x="700" y="236" width="118" height="9" rx="4.5" fill="#ead8c6"/>
+    <rect x="700" y="236" width="97" height="9" rx="4.5" fill="#c08a5b"/>
+
+    <!-- Flow chart -->
+    <rect x="183" y="284" width="409" height="207" rx="18" fill="#f8faf8"/>
+    <text x="204" y="316" font-size="15" font-weight="700" fill="#344b3d">Production flow</text>
+    <text x="552" y="316" text-anchor="end" font-size="11" fill="#829087">THIS WEEK</text>
+    <path d="M216 451H563M216 416H563M216 381H563M216 346H563" stroke="#e3ebe5"/>
+    <g fill="#829087" font-size="10" text-anchor="end">
+      <text x="207" y="454">0</text><text x="207" y="419">5</text><text x="207" y="384">10</text><text x="207" y="349">15t</text>
+    </g>
+    <path d="M224 430C257 416 277 421 305 394S356 368 386 383 432 413 462 373 519 348 555 357" fill="none" stroke="#5b9670" stroke-width="4" stroke-linecap="round"/>
+    <path d="M224 430C257 416 277 421 305 394S356 368 386 383 432 413 462 373 519 348 555 357V451H224Z" fill="#8ec2a0" opacity=".17"/>
+    <g fill="#5b9670">
+      <circle cx="224" cy="430" r="4"/><circle cx="305" cy="394" r="4"/><circle cx="386" cy="383" r="4"/><circle cx="462" cy="373" r="4"/><circle cx="555" cy="357" r="4"/>
+    </g>
+    <g fill="#78877e" font-size="10" text-anchor="middle">
+      <text x="224" y="473">MON</text><text x="305" y="473">TUE</text><text x="386" y="473">WED</text><text x="466" y="473">THU</text><text x="550" y="473">FRI</text>
+    </g>
+
+    <!-- Quality and batches panel -->
+    <rect x="605" y="284" width="231" height="207" rx="18" fill="#f7f8fb"/>
+    <text x="625" y="316" font-size="15" font-weight="700" fill="#3a4150">Quality and batches</text>
+    <circle cx="651" cy="357" r="24" fill="none" stroke="#e3e7ed" stroke-width="8"/>
+    <circle cx="651" cy="357" r="24" fill="none" stroke="#6ba17b" stroke-width="8" stroke-linecap="round" stroke-dasharray="132 151" transform="rotate(-90 651 357)"/>
+    <text x="651" y="362" text-anchor="middle" font-size="14" font-weight="700" fill="#3c654a">A</text>
+    <text x="687" y="352" font-size="12" font-weight="700" fill="#49566a">Premium grade</text>
+    <text x="687" y="371" font-size="11" fill="#84909e">87% of inspected cotton</text>
+    <path d="M625 397H816" stroke="#e5e8ed"/>
+    <g font-size="11">
+      <rect x="625" y="413" width="33" height="25" rx="8" fill="#e4f1e8"/>
+      <text x="641.5" y="430" text-anchor="middle" font-weight="700" fill="#4f7c5e">B24</text>
+      <text x="672" y="429" fill="#4c5665">Cleaning</text>
+      <rect x="767" y="414" width="49" height="23" rx="11.5" fill="#fff0dd"/>
+      <text x="791.5" y="429" text-anchor="middle" font-weight="700" fill="#a27443">Active</text>
+      <rect x="625" y="451" width="33" height="25" rx="8" fill="#e8e7f4"/>
+      <text x="641.5" y="468" text-anchor="middle" font-weight="700" fill="#67628a">B23</text>
+      <text x="672" y="467" fill="#4c5665">Packed</text>
+      <path d="M782 462l5 5 9-11" fill="none" stroke="#649174" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

@@ -2304,14 +2304,6 @@ button:focus-visible {
     background: color-mix(in srgb, var(--green-soft) 66%, var(--surface-strong));
 }
 
-.project-image-photo > img {
-    background: color-mix(in srgb, var(--surface-strong) 88%, transparent);
-}
-
-.project-image-book {
-    background: color-mix(in srgb, #e8d7bd 72%, var(--surface-strong));
-}
-
 .project-image-label {
     position: absolute;
     z-index: 1;
