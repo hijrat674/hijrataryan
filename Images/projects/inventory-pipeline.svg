@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Sales and inventory data pipeline</title>
+  <desc id="desc">An illustrated sales and inventory dashboard with a warehouse database, stock movement bars, and a connected source-to-report workflow.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#fff0dd"/><stop offset="1" stop-color="#e9eefc"/></linearGradient>
+    <filter id="shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#6b5971" flood-opacity=".11"/></filter>
+    <style>text{font-family:Arial,Helvetica,sans-serif}.ink{fill:#2d3549}.muted{fill:#8d92a6}.small{font-size:12px}.label{font-size:10px;font-weight:700;letter-spacing:1.4px}</style>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h960v600H0z"/>
+  <circle cx="868" cy="33" r="170" fill="#fff" opacity=".36"/><circle cx="33" cy="562" r="133" fill="#e9d4c1" opacity=".23"/>
+  <rect x="54" y="42" width="852" height="516" rx="27" fill="#fff" filter="url(#shadow)"/>
+  <rect x="78" y="67" width="38" height="38" rx="12" fill="#f5e7d8"/>
+  <path d="m87 81 10-5 10 5v13l-10 5-10-5Zm0 0 10 5 10-5m-10 5v13" fill="none" stroke="#b99470" stroke-width="1.8" stroke-linejoin="round"/>
+  <text x="128" y="84" font-size="18" font-weight="700" class="ink">Stockroom</text><text x="128" y="102" font-size="11" class="muted">Sales &amp; inventory intelligence</text>
+  <rect x="660" y="73" width="87" height="29" rx="10" fill="#f3f5fa"/><text x="679" y="92" font-size="11" class="muted">Overview</text><text x="772" y="92" font-size="11" class="muted">Pipeline</text><circle cx="861" cy="87" r="16" fill="#ede9f8"/><text x="855" y="91" font-size="10" font-weight="700" fill="#8e7fac">S</text>
+  <path d="M79 124h800" stroke="#edf0f5"/>
+  <text x="82" y="164" font-size="24" font-weight="700" class="ink">Every movement, connected.</text>
+  <text x="82" y="190" font-size="13" class="muted">A reliable path from daily transactions to useful reports.</text>
+  <rect x="80" y="214" width="245" height="272" rx="19" fill="#f8f5f0"/>
+  <text x="102" y="246" class="label" fill="#a38b72">CENTRAL WAREHOUSE</text>
+  <path d="M153 294v57c0 15 98 15 98 0v-57" fill="#f4e7d4" stroke="#c6aa86" stroke-width="2"/><ellipse cx="202" cy="294" rx="49" ry="16" fill="#fff7eb" stroke="#c6aa86" stroke-width="2"/><path d="M153 315c0 20 98 20 98 0m-98 20c0 20 98 20 98 0" fill="none" stroke="#c6aa86" stroke-width="2"/>
+  <circle cx="260" cy="353" r="20" fill="#dcece3" stroke="#f8f5f0" stroke-width="5"/><path d="m252 353 5 5 10-12" fill="none" stroke="#73a78c" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="202" y="404" font-size="21" font-weight="700" class="ink" text-anchor="middle">One source of truth</text>
+  <text x="202" y="429" font-size="12" class="muted" text-anchor="middle">Products · Orders · Stock</text>
+  <rect x="120" y="445" width="164" height="25" rx="12" fill="#fff"/><circle cx="139" cy="458" r="3.5" fill="#85b59a"/><text x="151" y="462" font-size="10" font-weight="700" fill="#81a18c">STRUCTURED &amp; READY</text>
+  <rect x="343" y="214" width="537" height="81" rx="16" fill="#f4f6fc"/>
+  <text x="363" y="241" class="label" fill="#919ab4">DAILY SALES</text><text x="363" y="275" font-size="27" font-weight="700" class="ink">Sales overview</text>
+  <rect x="742" y="235" width="118" height="33" rx="11" fill="#e7eee7"/><path d="m758 254 5-5 5 2 8-8" fill="none" stroke="#77a181" stroke-width="2" stroke-linecap="round"/><text x="786" y="256" font-size="11" font-weight="700" fill="#77a181">Weekly</text>
+  <rect x="343" y="311" width="537" height="175" rx="17" fill="#fff" stroke="#e8ebf3"/>
+  <text x="363" y="340" font-size="14" font-weight="700" class="ink">Inventory movement</text><circle cx="713" cy="335" r="4" fill="#a9b5e5"/><text x="724" y="339" font-size="10" class="muted">Received</text><circle cx="792" cy="335" r="4" fill="#d7bea2"/><text x="803" y="339" font-size="10" class="muted">Sold</text>
+  <path d="M377 363h477m-477 42h477m-477 42h477" stroke="#f0f2f7"/>
+  <g fill="#aab6e9"><rect x="404" y="385" width="20" height="62" rx="5"/><rect x="480" y="367" width="20" height="80" rx="5"/><rect x="556" y="394" width="20" height="53" rx="5"/><rect x="632" y="358" width="20" height="89" rx="5"/><rect x="708" y="376" width="20" height="71" rx="5"/><rect x="784" y="366" width="20" height="81" rx="5"/></g>
+  <g fill="#dcc6af"><rect x="430" y="408" width="20" height="39" rx="5"/><rect x="506" y="390" width="20" height="57" rx="5"/><rect x="582" y="414" width="20" height="33" rx="5"/><rect x="658" y="386" width="20" height="61" rx="5"/><rect x="734" y="398" width="20" height="49" rx="5"/><rect x="810" y="382" width="20" height="65" rx="5"/></g>
+  <g font-size="10" class="muted" text-anchor="middle"><text x="426" y="467">MON</text><text x="502" y="467">TUE</text><text x="578" y="467">WED</text><text x="654" y="467">THU</text><text x="730" y="467">FRI</text><text x="806" y="467">SAT</text></g>
+  <rect x="80" y="501" width="800" height="33" rx="11" fill="#f6f8fc"/>
+  <circle cx="101" cy="518" r="4" fill="#a8b5e3"/><text x="115" y="522" font-size="10" font-weight="700" class="muted">TRANSACTIONS</text><path d="M250 518h76m-5-4 5 4-5 4m174-4h76m-5-4 5 4-5 4" fill="none" stroke="#b6bdcc" stroke-width="1.4"/>
+  <text x="351" y="522" font-size="10" font-weight="700" class="muted">TRANSFORM</text><text x="602" y="522" font-size="10" font-weight="700" class="muted">WAREHOUSE</text><path d="M714 518h49m-5-4 5 4-5 4" fill="none" stroke="#b6bdcc" stroke-width="1.4"/><text x="787" y="522" font-size="10" font-weight="700" class="muted">REPORTS</text>
+</svg>

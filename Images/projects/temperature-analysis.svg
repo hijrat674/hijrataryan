@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Weekly temperature analysis</title>
+  <desc id="desc">An illustrated weather analytics dashboard with a weekly temperature line chart, forecast cards, and a clean data table.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#e4f1ff"/><stop offset="1" stop-color="#f8eddf"/></linearGradient>
+    <linearGradient id="area" x2="0" y2="1"><stop stop-color="#7199ff" stop-opacity=".3"/><stop offset="1" stop-color="#7199ff" stop-opacity="0"/></linearGradient>
+    <filter id="shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#47658b" flood-opacity=".12"/></filter>
+    <style>text{font-family:Arial,Helvetica,sans-serif}.ink{fill:#25334a}.muted{fill:#8290a5}.small{font-size:13px}.label{font-size:12px;font-weight:700;letter-spacing:1.4px}</style>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h960v600H0z"/>
+  <circle cx="893" cy="67" r="150" fill="#fff" opacity=".36"/>
+  <circle cx="55" cy="567" r="162" fill="#bcd4ff" opacity=".3"/>
+  <rect x="54" y="42" width="852" height="516" rx="27" fill="#fff" filter="url(#shadow)"/>
+  <path d="M81 42h133v516H81a27 27 0 0 1-27-27V69a27 27 0 0 1 27-27Z" fill="#f7f9fd"/>
+  <rect x="77" y="70" width="33" height="33" rx="11" fill="#5b80f8"/>
+  <path d="M86 90l5-8 5 12 6-9" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="121" y="92" font-size="17" font-weight="700" class="ink">Climate</text>
+  <text x="78" y="144" class="label muted">WORKSPACE</text>
+  <rect x="70" y="160" width="129" height="42" rx="12" fill="#e8edff"/>
+  <rect x="85" y="174" width="6" height="15" rx="2" fill="#5b80f8"/><rect x="95" y="170" width="6" height="19" rx="2" fill="#5b80f8"/>
+  <text x="112" y="186" font-size="13" font-weight="700" fill="#4f70dc">Overview</text>
+  <g class="muted small"><text x="86" y="231">◷</text><text x="112" y="231">History</text><text x="86" y="275">▤</text><text x="112" y="275">Dataset</text></g>
+  <rect x="77" y="438" width="114" height="93" rx="15" fill="#edf1f8"/>
+  <circle cx="96" cy="462" r="4" fill="#64b8a1"/>
+  <text x="108" y="466" font-size="11" class="ink">DATA READY</text>
+  <text x="91" y="491" font-size="11" class="muted">7 observations</text>
+  <text x="91" y="509" font-size="11" class="muted">Weekly sample</text>
+  <text x="248" y="92" font-size="23" font-weight="700" class="ink">Temperature analysis</text>
+  <text x="249" y="116" class="small muted">A clearer view of every degree.</text>
+  <rect x="751" y="73" width="122" height="34" rx="12" fill="#f4f6fa"/>
+  <text x="770" y="95" font-size="12" class="ink">This week⌄</text>
+  <rect x="246" y="142" width="195" height="96" rx="17" fill="#eff3ff"/>
+  <text x="264" y="168" class="small muted">Average temperature</text>
+  <text x="264" y="207" font-size="33" font-weight="700" class="ink">24.6°</text>
+  <path d="M389 197v-20m-5 5 5-5 5 5" fill="none" stroke="#5b80f8" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="457" y="142" width="195" height="96" rx="17" fill="#fff4e7"/>
+  <text x="475" y="168" class="small muted">Highest reading</text>
+  <text x="475" y="207" font-size="33" font-weight="700" class="ink">29°</text>
+  <circle cx="615" cy="191" r="12" fill="#ffc874"/><path d="M615 172v-5m0 48v-5m-19-19h-5m48 0h-5m-32-13-4-4m34 34-4-4m-26 0-4 4m34-34-4 4" stroke="#e9ad50" stroke-width="2" stroke-linecap="round"/>
+  <rect x="668" y="142" width="205" height="96" rx="17" fill="#ecf7f5"/>
+  <text x="686" y="168" class="small muted">Lowest reading</text>
+  <text x="686" y="207" font-size="33" font-weight="700" class="ink">21°</text>
+  <path d="M826 177v19a7 7 0 1 0 8 0v-19a4 4 0 0 0-8 0Z" fill="none" stroke="#64b8a1" stroke-width="2.5"/><path d="M830 185v17" stroke="#64b8a1" stroke-width="3" stroke-linecap="round"/>
+  <rect x="246" y="256" width="627" height="211" rx="17" fill="#fff" stroke="#e9edf5"/>
+  <text x="266" y="284" font-size="15" font-weight="700" class="ink">Weekly trend</text>
+  <circle cx="764" cy="279" r="4" fill="#6688f8"/><text x="776" y="284" font-size="11" class="muted">Celsius</text>
+  <g stroke="#eef1f7"><path d="M306 316h535M306 354h535M306 392h535M306 429h535"/></g>
+  <g font-size="10" class="muted"><text x="269" y="319">30°</text><text x="269" y="357">26°</text><text x="269" y="395">22°</text><text x="269" y="432">18°</text></g>
+  <path d="M314 399C344 399 368 371 400 371S455 344 487 344s55 48 87 48 55-67 87-67 55 28 87 28 61 28 86 28v48H314Z" fill="url(#area)"/>
+  <path d="M314 399C344 399 368 371 400 371S455 344 487 344s55 48 87 48 55-67 87-67 55 28 87 28 61 28 86 28" fill="none" stroke="#6688f8" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#fff" stroke="#6688f8" stroke-width="3"><circle cx="314" cy="399" r="4"/><circle cx="400" cy="371" r="4"/><circle cx="487" cy="344" r="4"/><circle cx="574" cy="392" r="4"/><circle cx="661" cy="325" r="5"/><circle cx="748" cy="353" r="4"/><circle cx="834" cy="381" r="4"/></g>
+  <g font-size="10" class="muted" text-anchor="middle"><text x="314" y="450">MON</text><text x="400" y="450">TUE</text><text x="487" y="450">WED</text><text x="574" y="450">THU</text><text x="661" y="450">FRI</text><text x="748" y="450">SAT</text><text x="834" y="450">SUN</text></g>
+  <rect x="246" y="483" width="627" height="48" rx="13" fill="#f6f8fc"/>
+  <text x="265" y="512" font-size="12" font-weight="700" class="ink">Weekly sample</text><text x="438" y="512" font-size="12" class="muted">Min 21°</text><text x="565" y="512" font-size="12" class="muted">Max 29°</text><rect x="730" y="495" width="125" height="24" rx="12" fill="#e0f2ec"/><text x="748" y="511" font-size="10" font-weight="700" fill="#4c947f">✓ CLEAN DATA</text>
+</svg>

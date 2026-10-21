@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Text transformation illustrated preview</title>
+  <desc id="desc">An original illustration of a text transformation application with an input message, a three step processing flow, and a transformed output.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#e7f3f0"/><stop offset="1" stop-color="#e9eefc"/></linearGradient><filter id="shadow" x="-25%" y="-25%" width="150%" height="160%"><feDropShadow dy="16" stdDeviation="20" flood-color="#4d838c" flood-opacity=".12"/></filter></defs>
+  <rect width="960" height="600" fill="url(#bg)"/><circle cx="856" cy="44" r="164" fill="#ccdde8" opacity=".6"/><circle cx="69" cy="578" r="174" fill="#cce6d9" opacity=".55"/>
+  <g font-family="Arial, sans-serif">
+    <rect x="86" y="72" width="788" height="456" rx="28" fill="#fff" filter="url(#shadow)"/>
+    <rect x="122" y="108" width="39" height="39" rx="12" fill="#e4f1ec"/><path d="M132 120H151M141 120V136M136 136H146" stroke="#75a698" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <text x="175" y="129" font-size="24" font-weight="700" fill="#375b5b">Give words a new form.</text><text x="175" y="151" font-size="12" fill="#91a8a7">Python text transformation</text>
+    <rect x="122" y="188" width="316" height="199" rx="18" fill="#f2f8f5"/><text x="144" y="218" font-size="11" font-weight="700" letter-spacing="1.7" fill="#8da49a">ORIGINAL TEXT</text>
+    <path d="M144 235H416" stroke="#deebe3"/><text x="144" y="285" font-size="29" font-weight="700" fill="#5c8a79">Hello, world.</text>
+    <rect x="144" y="313" width="199" height="7" rx="3.5" fill="#d5e6dd"/><rect x="144" y="332" width="241" height="7" rx="3.5" fill="#e0ede6"/><rect x="144" y="351" width="159" height="7" rx="3.5" fill="#e0ede6"/>
+    <circle cx="480" cy="287" r="23" fill="#8fafb6"/><path d="M469 287H491M484 280L491 287L484 294" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="522" y="188" width="315" height="199" rx="18" fill="#f1f4fa"/><text x="544" y="218" font-size="11" font-weight="700" letter-spacing="1.7" fill="#8e9eb3">TRANSFORMED TEXT</text>
+    <path d="M544 235H815" stroke="#dfe5ef"/><text x="544" y="285" font-size="28" font-weight="700" fill="#839bb7" letter-spacing="2">◎  ◇  ✧  △  ◇</text>
+    <g fill="#dce4ee"><rect x="544" y="313" width="29" height="9" rx="4"/><rect x="582" y="313" width="41" height="9" rx="4"/><rect x="632" y="313" width="19" height="9" rx="4"/><rect x="660" y="313" width="52" height="9" rx="4"/><rect x="721" y="313" width="24" height="9" rx="4"/><rect x="754" y="313" width="37" height="9" rx="4"/><rect x="544" y="335" width="48" height="9" rx="4"/><rect x="601" y="335" width="25" height="9" rx="4"/><rect x="635" y="335" width="37" height="9" rx="4"/><rect x="681" y="335" width="23" height="9" rx="4"/><rect x="713" y="335" width="50" height="9" rx="4"/></g>
+    <path d="M208 447H751" stroke="#dbe7e7" stroke-width="2" stroke-dasharray="5 7"/>
+    <rect x="146" y="424" width="173" height="47" rx="14" fill="#e8f2ec"/><circle cx="170" cy="447" r="10" fill="#c8dfd1"/><text x="170" y="451" text-anchor="middle" font-size="10" font-weight="700" fill="#6e9680">1</text><text x="190" y="452" font-size="13" font-weight="700" fill="#7a9887">Transform</text>
+    <rect x="394" y="424" width="173" height="47" rx="14" fill="#e9f2f2"/><circle cx="418" cy="447" r="10" fill="#cfe2e2"/><text x="418" y="451" text-anchor="middle" font-size="10" font-weight="700" fill="#70999b">2</text><text x="438" y="452" font-size="13" font-weight="700" fill="#7f9ea0">Add salt</text>
+    <rect x="642" y="424" width="173" height="47" rx="14" fill="#edf0f8"/><circle cx="666" cy="447" r="10" fill="#d8dfee"/><text x="666" y="451" text-anchor="middle" font-size="10" font-weight="700" fill="#8998b3">3</text><text x="686" y="452" font-size="13" font-weight="700" fill="#8d9db7">Output</text>
+  </g>
+</svg>

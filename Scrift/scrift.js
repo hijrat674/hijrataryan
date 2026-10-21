@@ -1,9 +1,6 @@
 const body = document.body;
-const menuButton = document.querySelector(".menu-toggle");
-const navigation = document.querySelector(".site-nav");
 const themeToggle = document.querySelector(".theme-toggle");
 const revealItems = document.querySelectorAll(".reveal");
-const sectionNodes = document.querySelectorAll("main section[id]");
 const themeStorageKey = "ha-portfolio-theme";
 
 const applyTheme = (theme, persist = true) => {
@@ -32,19 +29,47 @@ if (themeToggle) {
     });
 }
 
-if (menuButton && navigation) {
-    menuButton.addEventListener("click", () => {
-        const isOpen = navigation.classList.toggle("open");
-        menuButton.setAttribute("aria-expanded", String(isOpen));
-    });
+// Track section positions so tall project galleries keep the correct tab active.
+const navLinks = Array.from(document.querySelectorAll(".site-nav a, .mobile-nav a"));
+const navTargets = Array.from(document.querySelectorAll("main[id], main section[id]"));
+const header = document.querySelector(".site-header");
+let navigationFrame = 0;
 
-    navigation.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () => {
-            navigation.classList.remove("open");
-            menuButton.setAttribute("aria-expanded", "false");
-        });
+const updateNavigation = () => {
+    navigationFrame = 0;
+    const marker = (header ? header.getBoundingClientRect().bottom : 0) + 40;
+    let activeId = "#home";
+    navTargets.forEach((section) => {
+        if (section.getBoundingClientRect().top <= marker) {
+            activeId = `#${section.id}`;
+        }
     });
-}
+    if (window.scrollY > 0 && Math.ceil(window.scrollY + window.innerHeight) >= document.documentElement.scrollHeight - 2) {
+        activeId = "#contact";
+    }
+    // The bottom bar uses Projects for the work showcase as well as the gallery.
+    navLinks.forEach((link) => {
+        const linkId = link.getAttribute("href");
+        const active = linkId === activeId || (
+            activeId === "#work" && linkId === "#projects" && link.closest(".mobile-nav")
+        );
+        link.classList.toggle("is-active", Boolean(active));
+        if (active) {
+            link.setAttribute("aria-current", "location");
+        } else {
+            link.removeAttribute("aria-current");
+        }
+    });
+};
+
+const scheduleNavigation = () => {
+    if (!navigationFrame) navigationFrame = requestAnimationFrame(updateNavigation);
+};
+window.addEventListener("scroll", scheduleNavigation, { passive: true });
+window.addEventListener("resize", scheduleNavigation);
+window.addEventListener("load", scheduleNavigation);
+window.addEventListener("hashchange", scheduleNavigation);
+updateNavigation();
 
 if ("IntersectionObserver" in window) {
     const revealObserver = new IntersectionObserver(
@@ -57,7 +82,8 @@ if ("IntersectionObserver" in window) {
             });
         },
         {
-            threshold: 0.18
+            threshold: 0,
+            rootMargin: "0px 0px -24px 0px"
         }
     );
 
@@ -65,31 +91,35 @@ if ("IntersectionObserver" in window) {
         revealObserver.observe(item);
     });
 
-    const navLinks = Array.from(document.querySelectorAll(".site-nav a"));
-    const sectionObserver = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (!entry.isIntersecting) {
-                    return;
-                }
-
-                const activeId = `#${entry.target.id}`;
-                navLinks.forEach((link) => {
-                    link.classList.toggle("is-active", link.getAttribute("href") === activeId);
-                });
-            });
-        },
-        {
-            rootMargin: "-20% 0px -55% 0px",
-            threshold: 0.2
-        }
-    );
-
-    sectionNodes.forEach((section) => {
-        sectionObserver.observe(section);
-    });
 } else {
     revealItems.forEach((item) => {
         item.classList.add("visible");
+    });
+}
+
+// Keep every project readable without JavaScript; enhance with category filters.
+const projectToolbar = document.querySelector('.project-toolbar');
+const projectFilters = document.querySelectorAll('[data-filter]');
+const projectCards = document.querySelectorAll('#projects [data-category]');
+const projectCount = document.querySelector('.project-count');
+if (projectToolbar && projectCount && projectCards.length) {
+    projectToolbar.hidden = false;
+    projectFilters.forEach((button) => {
+        button.addEventListener('click', () => {
+            const category = button.dataset.filter;
+            let visibleCount = 0;
+            projectCards.forEach((card) => {
+                const visible = category === 'all' || card.dataset.category === category;
+                card.hidden = !visible;
+                if (visible) visibleCount += 1;
+            });
+            projectFilters.forEach((filter) => {
+                const selected = filter === button;
+                filter.classList.toggle('is-selected', selected);
+                filter.setAttribute('aria-pressed', String(selected));
+            });
+            projectCount.textContent = `${visibleCount} ${visibleCount === 1 ? 'project' : 'projects'}`;
+            scheduleNavigation();
+        });
     });
 }

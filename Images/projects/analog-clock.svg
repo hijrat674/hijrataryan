@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Analog clock illustrated preview</title>
+  <desc id="desc">An original illustration of a styled analog clock application with a large round face, clear hands, and a digital time display.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#e9ecef"/><stop offset="1" stop-color="#ede8fa"/></linearGradient><linearGradient id="face" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#f4f3fa"/></linearGradient><filter id="shadow" x="-40%" y="-40%" width="180%" height="190%"><feDropShadow dy="14" stdDeviation="18" flood-color="#555a7f" flood-opacity=".13"/></filter></defs>
+  <rect width="960" height="600" fill="url(#bg)"/><circle cx="844" cy="49" r="190" fill="#ddd6f1" opacity=".5"/><circle cx="59" cy="562" r="171" fill="#d3e3e7" opacity=".5"/>
+  <g font-family="Arial, sans-serif">
+    <rect x="86" y="72" width="788" height="456" rx="28" fill="#fff" filter="url(#shadow)"/>
+    <text x="126" y="128" font-size="24" font-weight="700" fill="#3b3a51">A little time, beautifully kept.</text><text x="126" y="153" font-size="13" fill="#9a98ab">Styled analog clock</text>
+    <circle cx="334" cy="337" r="159" fill="#e9e7f1"/><circle cx="334" cy="337" r="147" fill="url(#face)" stroke="#fff" stroke-width="5" filter="url(#shadow)"/>
+    <g stroke="#d2cddb" stroke-width="2" stroke-linecap="round"><path d="M334 201V210M334 464V473M198 337H207M461 337H470M266 219L271 227M397 447L402 455M216 269L224 274M444 400L452 405M216 405L224 400M444 274L452 269M266 455L271 447M397 227L402 219"/></g>
+    <g fill="#82798f" font-size="18" font-weight="700" text-anchor="middle"><text x="334" y="241">12</text><text x="436" y="343">3</text><text x="334" y="444">6</text><text x="231" y="343">9</text></g>
+    <path d="M334 337L270 292" stroke="#5a546c" stroke-width="12" stroke-linecap="round"/><path d="M334 337L426 284" stroke="#9285b1" stroke-width="8" stroke-linecap="round"/><path d="M317 352L405 275" stroke="#d69a95" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="334" cy="337" r="13" fill="#5a546c"/><circle cx="334" cy="337" r="6" fill="#f4eff7"/>
+    <text x="554" y="250" font-size="11" font-weight="700" letter-spacing="2.5" fill="#aaa0ba">MAKE EVERY MOMENT</text><text x="550" y="306" font-size="49" font-weight="700" fill="#5d536f">Count.</text>
+    <rect x="551" y="335" width="249" height="88" rx="17" fill="#f4f0fa"/><text x="675" y="390" text-anchor="middle" font-size="38" font-weight="700" letter-spacing="4" fill="#8b7aab">10:10</text>
+    <circle cx="561" cy="460" r="5" fill="#b8cbb9"/><text x="576" y="465" font-size="12" fill="#9b93a6">A clear view of the passing seconds</text>
+    <path d="M760 211H784M772 199V223" stroke="#d9c9ab" stroke-width="3" stroke-linecap="round"/><circle cx="809" cy="270" r="5" fill="#dbcbdc"/>
+  </g>
+</svg>

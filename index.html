@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Hijratullah Aryan | Portfolio</title>
     <meta
         name="description"
@@ -33,9 +33,10 @@
             </a>
 
             <div class="header-tools">
-                <nav class="site-nav">
+                <nav class="site-nav" aria-label="Main navigation">
                     <a href="#about">About</a>
                     <a href="#work">Work</a>
+                    <a href="#projects">Projects</a>
                     <a href="#skills">Skills</a>
                     <a href="#experience">Experience</a>
                     <a href="#contact">Contact</a>
@@ -49,10 +50,6 @@
                     </span>
                 </button>
 
-                <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">
-                    <span></span>
-                    <span></span>
-                </button>
             </div>
         </header>
 
@@ -243,6 +240,151 @@
                 </div>
             </section>
 
+            <section class="projects-section reveal" id="projects" aria-labelledby="projects-title">
+                <div class="section-top">
+                    <div>
+                        <p class="projects-eyebrow">From idea to experience</p>
+                        <h2 class="hand-title" id="projects-title">Completed Projects</h2>
+                    </div>
+                    <p>Websites, business systems, desktop applications, and data projects. Explore the collection by category.</p>
+                </div>
+
+                <div class="project-toolbar" hidden>
+                    <div class="project-filters" role="group" aria-label="Filter projects">
+                        <button type="button" class="is-selected" data-filter="all" aria-pressed="true">All projects</button>
+                        <button type="button" data-filter="web" aria-pressed="false">Web</button>
+                        <button type="button" data-filter="desktop" aria-pressed="false">Desktop</button>
+                        <button type="button" data-filter="data" aria-pressed="false">Data &amp; Python</button>
+                    </div>
+                    <p class="project-count" role="status" aria-live="polite">19 projects</p>
+                </div>
+                <article class="project-feature" data-category="web">
+                    <figure class="project-art project-feature-image"><img src="Images/projects/portfolio.svg" alt="Illustrated preview of this portfolio&#8217;s blue typography and glass panels" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">Design illustration</figcaption></figure>
+                    <div class="project-details">
+                        <div class="project-meta"><span class="project-status">Completed</span><span>Personal website</span></div>
+                        <h3>My corner of the web.</h3>
+                        <p>A personal portfolio bringing my experience, skills, and work together in one place. Built with frosted glass surfaces, light and dark themes, and a layout that adapts to phones.</p>
+                        <ul class="project-highlights">
+                            <li>Responsive layouts for desktop and mobile</li>
+                            <li>Light and dark theme switcher</li>
+                            <li>Smooth section navigation and reveal animations</li>
+                        </ul>
+                        <ul class="project-stack" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                        <a class="button button-primary project-visit" href="#home">Explore portfolio <span aria-hidden="true">&#8599;</span></a>
+                    </div>
+                </article>
+                <div class="project-gallery">
+                    <article class="project-tile" data-category="web">
+                        <figure class="project-tile-art"><img src="Images/projects/clinic-dbms.svg" alt="Illustrated clinic dashboard with patient services, billing, and pharmacy panels" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">Illustrated preview</figcaption></figure>
+                        <div class="project-tile-body"><p class="projects-eyebrow">Web development</p><h3>Clinic DBMS</h3><p>A clinic management application for patient registration, billing, pharmacy sales, doctors, reports, and database backups.</p>
+                        <ul class="project-stack" aria-label="Technologies used"><li>Laravel</li><li>PHP</li><li>SQLite</li><li>Docker</li></ul>
+                        <details class="project-more"><summary>Project details <span aria-hidden="true">+</span></summary><p>Patient cards, printable bills, service management, and authenticated staff access.</p></details></div>
+                    </article>
+                    <article class="project-tile" data-category="web">
+                        <figure class="project-tile-art project-image-photo"><img src="Images/projects/cotton.jpg" alt="Cotton bolls from the cotton management project&#8217;s login background" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">Project photo</figcaption></figure>
+                        <div class="project-tile-body"><p class="projects-eyebrow">Web development</p><h3>Cotton Management System</h3><p>A business application connecting cotton intake, production, inventory, sales, and accounting.</p>
+                        <ul class="project-stack" aria-label="Technologies used"><li>Laravel</li><li>PHP</li><li>Blade</li></ul>
+                        <details class="project-more"><summary>Project details <span aria-hidden="true">+</span></summary><p>Role-based dashboards for administrators, managers, production, and sales teams.</p></details></div>
+                    </article>
+                    <article class="project-tile" data-category="web">
+                        <figure class="project-tile-art project-image-photo"><img src="Images/projects/parking.jpg" alt="Cars parked in the garage featured on the parking website" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">Project photo</figcaption></figure>
+                        <div class="project-tile-body"><p class="projects-eyebrow">Web development</p><h3>Parking Website</h3><p>A multi-page parking website presenting services, location information, and a contact experience.</p>
+                        <ul class="project-stack" aria-label="Technologies used"><li>HTML</li><li>CSS</li></ul>
+                        <details class="project-more"><summary>Project details <span aria-hidden="true">+</span></summary><p>Includes dedicated about, services, location, and contact pages.</p></details></div>
+                    </article>
+                    <article class="project-tile" data-category="web">
+                        <figure class="project-tile-art project-image-screenshot"><img src="Images/projects/petrol-station.png" alt="Petrol station website homepage with Pashto navigation and service information" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">Website screenshot</figcaption></figure>
+                        <div class="project-tile-body"><p class="projects-eyebrow">Web development</p><h3>Petrol Station Website</h3><p>A petrol station website with service information, location pages, contact forms, and login screens.</p>
+                        <ul class="project-stack" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                        <details class="project-more"><summary>Project details <span aria-hidden="true">+</span></summary><p>Groups the related petrol station versions into one project.</p></details></div>
+                    </article>
+                    <article class="project-tile" data-category="web">
+                        <figure class="project-tile-art project-image-screenshot"><img src="Images/projects/courses.png" alt="Education website homepage with Pashto course information" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">Website screenshot</figcaption></figure>
+                        <div class="project-tile-body"><p class="projects-eyebrow">Web development</p><h3>Education &amp; Courses Website</h3><p>A Pashto-language educational website presenting courses, student feedback, and contact information.</p>
+                        <ul class="project-stack" aria-label="Technologies used"><li>HTML</li><li>CSS</li></ul>
+                        <details class="project-more"><summary>Project details <span aria-hidden="true">+</span></summary><p>Separate home, courses, about, student, and contact pages.</p></details></div>
+                    </article>
+                    <article class="project-tile" data-category="web">
+                        <figure class="project-tile-art project-image-book"><img src="Images/projects/literature.png" alt="Pashto poetry book cover featured on the Ehsas literature website" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">From the project</figcaption></figure>
+                        <div class="project-tile-body"><p class="projects-eyebrow">Web development</p><h3>Ehsas Literature Website</h3><p>A literature website bringing together books, poets, biographies, genres, and events.</p>
+                        <ul class="project-stack" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                        <details class="project-more"><summary>Project details <span aria-hidden="true">+</span></summary><p>A collection of linked pages dedicated to literary content.</p></details></div>
+                    </article>
+                    <article class="project-tile" data-category="web">
+                        <figure class="project-tile-art"><img src="Images/projects/pashto-portfolio.svg" alt="Illustrated preview of a Pashto portfolio with introduction and profile layout" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">Illustrated preview</figcaption></figure>
+                        <div class="project-tile-body"><p class="projects-eyebrow">Web development</p><h3>Pashto Portfolio Website</h3><p>An earlier portfolio website presenting personal information and work in Pashto.</p>
+                        <ul class="project-stack" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                        <details class="project-more"><summary>Project details <span aria-hidden="true">+</span></summary><p>A separate language-focused portfolio design with section navigation.</p></details></div>
+                    </article>
+                    <article class="project-tile" data-category="desktop">
+                        <figure class="project-tile-art"><img src="Images/projects/hotel-booking.svg" alt="Hotel booking illustration with room listings and availability" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">Illustrated preview</figcaption></figure>
+                        <div class="project-tile-body"><p class="projects-eyebrow">Desktop applications</p><h3>Hotel Room Booking</h3><p>A Java desktop application for browsing room information and managing room availability and bookings.</p>
+                        <ul class="project-stack" aria-label="Technologies used"><li>Java</li><li>Swing</li></ul>
+                        <details class="project-more"><summary>Project details <span aria-hidden="true">+</span></summary><p>Room models track room numbers, types, prices, and availability in memory.</p></details></div>
+                    </article>
+                    <article class="project-tile" data-category="desktop">
+                        <figure class="project-tile-art"><img src="Images/projects/student-attendance.svg" alt="Attendance interface illustration with a student record table" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">Illustrated preview</figcaption></figure>
+                        <div class="project-tile-body"><p class="projects-eyebrow">Desktop applications</p><h3>Student Attendance System</h3><p>A desktop interface for recording student attendance with student IDs, dates, and attendance status.</p>
+                        <ul class="project-stack" aria-label="Technologies used"><li>Java</li><li>Swing</li></ul>
+                        <details class="project-more"><summary>Project details <span aria-hidden="true">+</span></summary><p>Displays attendance records in a table with an in-memory record collection.</p></details></div>
+                    </article>
+                    <article class="project-tile" data-category="desktop">
+                        <figure class="project-tile-art"><img src="Images/projects/examination.svg" alt="Examination interface illustration with multiple choice questions" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">Illustrated preview</figcaption></figure>
+                        <div class="project-tile-body"><p class="projects-eyebrow">Desktop applications</p><h3>Examination System</h3><p>A Java desktop examination application with questions, answer choices, and result tracking.</p>
+                        <ul class="project-stack" aria-label="Technologies used"><li>Java</li><li>Swing</li></ul>
+                        <details class="project-more"><summary>Project details <span aria-hidden="true">+</span></summary><p>Uses question models and a results collection to manage the exam flow.</p></details></div>
+                    </article>
+                    <article class="project-tile" data-category="desktop">
+                        <figure class="project-tile-art"><img src="Images/projects/unit-converter.svg" alt="Unit conversion illustration with source and destination values" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">Illustrated preview</figcaption></figure>
+                        <div class="project-tile-body"><p class="projects-eyebrow">Desktop applications</p><h3>Advanced Unit Converter</h3><p>A desktop conversion tool with category selection, source and destination units, and result fields.</p>
+                        <ul class="project-stack" aria-label="Technologies used"><li>Java</li><li>Swing</li></ul>
+                        <details class="project-more"><summary>Project details <span aria-hidden="true">+</span></summary><p>Includes conversion and clear controls in a structured desktop interface.</p></details></div>
+                    </article>
+                    <article class="project-tile" data-category="desktop">
+                        <figure class="project-tile-art"><img src="Images/projects/analog-clock.svg" alt="Analog and digital clock illustration with time and date displays" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">Illustrated preview</figcaption></figure>
+                        <div class="project-tile-body"><p class="projects-eyebrow">Desktop applications</p><h3>Analog &amp; Digital Clock</h3><p>A custom-drawn analog clock paired with a digital time display and date.</p>
+                        <ul class="project-stack" aria-label="Technologies used"><li>Java</li><li>Swing</li><li>Java2D</li></ul>
+                        <details class="project-more"><summary>Project details <span aria-hidden="true">+</span></summary><p>Combines a painted clock face with a continuously updated time display.</p></details></div>
+                    </article>
+                    <article class="project-tile" data-category="desktop">
+                        <figure class="project-tile-art"><img src="Images/projects/guessing-game.svg" alt="Number guessing game illustration with guesses and feedback" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">Illustrated preview</figcaption></figure>
+                        <div class="project-tile-body"><p class="projects-eyebrow">Desktop applications</p><h3>Number Guessing Game</h3><p>An interactive desktop number guessing game with feedback, attempt tracking, and a restart control.</p>
+                        <ul class="project-stack" aria-label="Technologies used"><li>Java</li><li>Swing</li></ul>
+                        <details class="project-more"><summary>Project details <span aria-hidden="true">+</span></summary><p>Uses a randomly generated target number and a dedicated guessing interface.</p></details></div>
+                    </article>
+                    <article class="project-tile" data-category="data">
+                        <figure class="project-tile-art"><img src="Images/projects/temperature-analysis.svg" alt="Weekly temperature chart illustration with summary statistics" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">Illustrated preview</figcaption></figure>
+                        <div class="project-tile-body"><p class="projects-eyebrow">Data & Python</p><h3>Weekly Temperature Analysis</h3><p>An interactive analysis of sample weekly temperatures with charts, summary statistics, and correlations.</p>
+                        <ul class="project-stack" aria-label="Technologies used"><li>Python</li><li>Tkinter</li><li>pandas</li><li>Matplotlib</li></ul>
+                        <details class="project-more"><summary>Project details <span aria-hidden="true">+</span></summary><p>Includes a one-sample statistical test using SciPy and correlation visualizations.</p></details></div>
+                    </article>
+                    <article class="project-tile" data-category="data">
+                        <figure class="project-tile-art"><img src="Images/projects/hospital-etl.svg" alt="Hospital ETL illustration showing records moving through cleaning and loading" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">Illustrated preview</figcaption></figure>
+                        <div class="project-tile-body"><p class="projects-eyebrow">Data & Python</p><h3>Hospital Data ETL</h3><p>A Python pipeline that extracts patient records from MySQL and applies data cleaning with audit logging.</p>
+                        <ul class="project-stack" aria-label="Technologies used"><li>Python</li><li>pandas</li><li>MySQL</li></ul>
+                        <details class="project-more"><summary>Project details <span aria-hidden="true">+</span></summary><p>An educational ETL implementation with extraction and cleaning stages.</p></details></div>
+                    </article>
+                    <article class="project-tile" data-category="data">
+                        <figure class="project-tile-art"><img src="Images/projects/inventory-pipeline.svg" alt="Sales and inventory data illustration with charts and a warehouse pipeline" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">Illustrated preview</figcaption></figure>
+                        <div class="project-tile-body"><p class="projects-eyebrow">Data & Python</p><h3>Sales &amp; Inventory Data Pipeline</h3><p>A Python data project generating sample sales and inventory records for a PostgreSQL warehouse.</p>
+                        <ul class="project-stack" aria-label="Technologies used"><li>Python</li><li>PostgreSQL</li><li>SQLAlchemy</li><li>Faker</li></ul>
+                        <details class="project-more"><summary>Project details <span aria-hidden="true">+</span></summary><p>Uses generated demonstration data and pandas for the warehouse workflow.</p></details></div>
+                    </article>
+                    <article class="project-tile" data-category="desktop">
+                        <figure class="project-tile-art"><img src="Images/projects/text-transformation.svg" alt="Text transformation illustration showing input and transformed output" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">Illustrated preview</figcaption></figure>
+                        <div class="project-tile-body"><p class="projects-eyebrow">Desktop applications</p><h3>Text Transformation Demo</h3><p>A Tkinter learning application exploring text transformation with salt insertion and removal.</p>
+                        <ul class="project-stack" aria-label="Technologies used"><li>Python</li><li>Tkinter</li></ul>
+                        <details class="project-more"><summary>Project details <span aria-hidden="true">+</span></summary><p>An educational text-processing interface.</p></details></div>
+                    </article>
+                    <article class="project-tile" data-category="data">
+                        <figure class="project-tile-art"><img src="Images/projects/etl-toolkit.svg" alt="ETL toolkit illustration showing connected data processing modules" width="960" height="600" loading="lazy" decoding="async"><figcaption class="project-image-label">Illustrated preview</figcaption></figure>
+                        <div class="project-tile-body"><p class="projects-eyebrow">Data & Python</p><h3>ETL Subsystems Learning Toolkit</h3><p>A Python learning package exploring simplified implementations of Kimball’s 34 ETL subsystems.</p>
+                        <ul class="project-stack" aria-label="Technologies used"><li>Python</li><li>pandas</li></ul>
+                        <details class="project-more"><summary>Project details <span aria-hidden="true">+</span></summary><p>Includes modules for extraction, cleansing, deduplication, dimensions, auditing, and sample flows.</p></details></div>
+                    </article>
+                </div>
+            </section>
+
             <section class="summary-section reveal" id="experience">
                 <article class="summary-panel panel-experience">
                     <h2>Experience</h2>
@@ -347,6 +489,33 @@
             </section>
         </main>
     </div>
+
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a class="is-active" href="#home" aria-current="location">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></svg>
+            <span>Home</span>
+        </a>
+        <a href="#about">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v2"/></svg>
+            <span>About</span>
+        </a>
+        <a href="#projects">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+            <span>Projects</span>
+        </a>
+        <a href="#skills">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7-5 5 5 5m10-10 5 5-5 5M14 4l-4 16"/></svg>
+            <span>Skills</span>
+        </a>
+        <a href="#experience" aria-label="Career and experience">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12a21 21 0 0 0 18 0M12 11v4"/></svg>
+            <span>Career</span>
+        </a>
+        <a href="#contact">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <span>Contact</span>
+        </a>
+    </nav>
 
     <script src="Scrift/scrift.js"></script>
 </body>

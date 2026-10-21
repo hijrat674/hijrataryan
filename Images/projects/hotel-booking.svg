@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Hotel room booking illustrated preview</title>
+  <desc id="desc">An original illustration of a room booking dashboard with a bed, three room choices, and a reservation button.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#fff2df"/><stop offset="1" stop-color="#f3e8ff"/></linearGradient>
+    <linearGradient id="room" x2="0" y2="1"><stop stop-color="#fae8d2"/><stop offset="1" stop-color="#e9cfb4"/></linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%"><feDropShadow dy="16" stdDeviation="20" flood-color="#663d26" flood-opacity=".12"/></filter>
+  </defs>
+  <rect width="960" height="600" fill="url(#bg)"/>
+  <circle cx="843" cy="85" r="142" fill="#f7d8ac" opacity=".55"/><circle cx="94" cy="577" r="165" fill="#e1d3f6" opacity=".65"/>
+  <g font-family="Arial, sans-serif">
+    <rect x="86" y="72" width="788" height="456" rx="28" fill="#fff" filter="url(#shadow)"/>
+    <circle cx="114" cy="99" r="4" fill="#e6d4c7"/><circle cx="130" cy="99" r="4" fill="#e6d4c7"/><circle cx="146" cy="99" r="4" fill="#e6d4c7"/>
+    <text x="123" y="154" font-size="25" font-weight="700" fill="#362b2a">Find your perfect stay.</text>
+    <rect x="734" y="122" width="103" height="31" rx="15.5" fill="#fff2e1"/><text x="785" y="142" text-anchor="middle" font-size="12" font-weight="700" fill="#9d5b1f">ROOM BOOKING</text>
+    <rect x="122" y="182" width="330" height="266" rx="18" fill="url(#room)"/>
+    <path d="M122 377H452V430Q452 448 434 448H140Q122 448 122 430Z" fill="#cba987"/>
+    <rect x="153" y="212" width="66" height="89" rx="5" fill="#fff9ed"/><path d="M186 212V301M153 255H219" stroke="#e3c5a4" stroke-width="5"/>
+    <rect x="257" y="224" width="130" height="117" rx="15" fill="#aa765c"/>
+    <rect x="244" y="283" width="155" height="71" rx="12" fill="#fffaf1"/>
+    <rect x="255" y="285" width="62" height="24" rx="8" fill="#f6e6ce"/><rect x="325" y="285" width="62" height="24" rx="8" fill="#f6e6ce"/>
+    <path d="M244 321H399V375H244Z" fill="#cc8f66"/><path d="M244 342H399" stroke="#e5b795" stroke-width="5"/>
+    <path d="M248 375V393M395 375V393" stroke="#875b44" stroke-width="8" stroke-linecap="round"/>
+    <path d="M415 291V367M402 367H428" stroke="#9a765e" stroke-width="4" stroke-linecap="round"/><path d="M401 268H429L435 296H395Z" fill="#fff4cf"/>
+    <rect x="140" y="401" width="133" height="29" rx="14.5" fill="#fff" fill-opacity=".8"/><text x="206" y="420" font-size="12" text-anchor="middle" fill="#79573e">A little room to relax</text>
+    <text x="486" y="201" font-size="12" font-weight="700" letter-spacing="1.7" fill="#a7876f">AVAILABLE ROOMS</text>
+    <rect x="483" y="220" width="354" height="65" rx="13" fill="#fcf7f1" stroke="#dcbfa6"/>
+    <rect x="500" y="234" width="38" height="37" rx="10" fill="#e9d3bd"/><text x="519" y="258" text-anchor="middle" font-size="13" font-weight="700" fill="#815939">101</text>
+    <text x="552" y="246" font-size="15" font-weight="700" fill="#44372f">Single room</text><text x="552" y="266" font-size="12" fill="#9a7f69">One restful space</text><text x="811" y="258" text-anchor="end" font-size="21" font-weight="700" fill="#74503a">$50</text>
+    <rect x="483" y="296" width="354" height="65" rx="13" fill="#faf8f6"/>
+    <text x="519" y="335" text-anchor="middle" font-size="13" font-weight="700" fill="#aa8d75">102</text><text x="552" y="323" font-size="15" font-weight="700" fill="#44372f">Double room</text><text x="552" y="343" font-size="12" fill="#9a7f69">A little more room</text><text x="811" y="334" text-anchor="end" font-size="21" font-weight="700" fill="#74503a">$75</text>
+    <rect x="483" y="372" width="354" height="65" rx="13" fill="#faf8f6"/>
+    <text x="519" y="411" text-anchor="middle" font-size="13" font-weight="700" fill="#aa8d75">201</text><text x="552" y="399" font-size="15" font-weight="700" fill="#44372f">Suite</text><text x="552" y="419" font-size="12" fill="#9a7f69">Make yourself at home</text><text x="811" y="410" text-anchor="end" font-size="21" font-weight="700" fill="#74503a">$150</text>
+    <rect x="122" y="467" width="715" height="34" rx="12" fill="#ad7354"/><text x="479" y="489" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Reserve a room  →</text>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Number guessing game illustrated preview</title>
+  <desc id="desc">An original illustration of a number guessing game with numbered tiles, a guess of forty two, and higher or lower feedback.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#fff0e6"/><stop offset="1" stop-color="#f7e8f5"/></linearGradient><filter id="shadow" x="-25%" y="-25%" width="150%" height="160%"><feDropShadow dy="16" stdDeviation="20" flood-color="#b77368" flood-opacity=".13"/></filter></defs>
+  <rect width="960" height="600" fill="url(#bg)"/><circle cx="898" cy="75" r="166" fill="#f5d0bc" opacity=".5"/><circle cx="61" cy="551" r="171" fill="#ecd1e9" opacity=".6"/>
+  <g font-family="Arial, sans-serif">
+    <rect x="86" y="72" width="788" height="456" rx="28" fill="#fff" filter="url(#shadow)"/>
+    <rect x="122" y="106" width="98" height="27" rx="13.5" fill="#fff0e5"/><text x="171" y="124" text-anchor="middle" font-size="11" font-weight="700" fill="#c28b67">BRAIN BREAK</text>
+    <text x="122" y="180" font-size="32" font-weight="700" fill="#5d3c41">A little guesswork.</text><text x="122" y="206" font-size="14" fill="#b29697">Find the hidden number between 1 and 100.</text>
+    <rect x="122" y="240" width="383" height="135" rx="19" fill="#fcf5f2"/><text x="145" y="269" font-size="11" font-weight="700" letter-spacing="1.7" fill="#b29b97">YOUR GUESS</text><text x="145" y="337" font-size="56" font-weight="700" fill="#ba7768">42</text><path d="M228 292V346" stroke="#e5c8bc" stroke-width="2"/>
+    <rect x="333" y="283" width="145" height="54" rx="14" fill="#d68d79"/><text x="405" y="316" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Try this  →</text>
+    <rect x="122" y="395" width="383" height="59" rx="14" fill="#fff4dc"/><circle cx="149" cy="424" r="13" fill="#f3ddb3"/><path d="M143 426L149 420L155 426M149 420V431" stroke="#bd9555" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="173" y="429" font-size="14" font-weight="700" fill="#ad8a54">A little higher. Keep going!</text>
+    <text x="122" y="492" font-size="12" fill="#bda5a1">Attempt 03</text><text x="505" y="492" font-size="12" text-anchor="end" fill="#bd9489">Try. Learn. Try again.</text>
+    <rect x="548" y="182" width="130" height="130" rx="24" fill="#f5e4ce" transform="rotate(-9 613 247)"/><text x="613" y="269" text-anchor="middle" font-size="53" font-weight="700" fill="#c4a17b" transform="rotate(-9 613 247)">25</text>
+    <rect x="695" y="174" width="126" height="126" rx="23" fill="#eadced" transform="rotate(9 758 237)"/><text x="758" y="260" text-anchor="middle" font-size="50" font-weight="700" fill="#b395bb" transform="rotate(9 758 237)">75</text>
+    <rect x="564" y="337" width="117" height="117" rx="23" fill="#e1eadf" transform="rotate(6 622 395)"/><text x="622" y="415" text-anchor="middle" font-size="45" font-weight="700" fill="#91a48c" transform="rotate(6 622 395)">50</text>
+    <rect x="701" y="324" width="129" height="129" rx="24" fill="#d99584" transform="rotate(-7 765 388)" filter="url(#shadow)"/><text x="765" y="413" text-anchor="middle" font-size="64" font-weight="700" fill="#fff5ec" transform="rotate(-7 765 388)">?</text>
+    <path d="M575 138V153M568 145H582M831 483V498M824 490H838" stroke="#d9b39d" stroke-width="3" stroke-linecap="round"/><circle cx="827" cy="319" r="5" fill="#d2bbd8"/>
+  </g>
+</svg>
