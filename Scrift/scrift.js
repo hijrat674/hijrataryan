@@ -2,20 +2,29 @@ const body = document.body;
 const themeToggle = document.querySelector(".theme-toggle");
 const revealItems = document.querySelectorAll(".reveal");
 const themeStorageKey = "ha-portfolio-theme";
+const translate = (text) => window.portfolioLanguage?.translate(text) ?? text;
+
+const updateThemeLabel = () => {
+    themeToggle?.setAttribute(
+        "aria-label",
+        translate(body.dataset.theme === "dark" ? "Switch to light mode" : "Switch to dark mode")
+    );
+};
 
 const applyTheme = (theme, persist = true) => {
     body.dataset.theme = theme;
 
     if (themeToggle) {
         themeToggle.setAttribute("aria-pressed", String(theme === "dark"));
-        themeToggle.setAttribute(
-            "aria-label",
-            theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
-        );
+        updateThemeLabel();
     }
 
     if (persist) {
-        localStorage.setItem(themeStorageKey, theme);
+        try {
+            localStorage.setItem(themeStorageKey, theme);
+        } catch {
+            // The control still works when browser storage is unavailable.
+        }
     }
 };
 
@@ -102,24 +111,35 @@ const projectToolbar = document.querySelector('.project-toolbar');
 const projectFilters = document.querySelectorAll('[data-filter]');
 const projectCards = document.querySelectorAll('#projects [data-category]');
 const projectCount = document.querySelector('.project-count');
+const updateProjectCount = () => {
+    if (!projectCount) return;
+    const count = Array.from(projectCards).filter((card) => !card.hidden).length;
+    projectCount.textContent = window.portfolioLanguage?.formatProjectCount(count)
+        ?? `${count} ${count === 1 ? 'project' : 'projects'}`;
+};
 if (projectToolbar && projectCount && projectCards.length) {
     projectToolbar.hidden = false;
+    updateProjectCount();
     projectFilters.forEach((button) => {
         button.addEventListener('click', () => {
             const category = button.dataset.filter;
-            let visibleCount = 0;
             projectCards.forEach((card) => {
                 const visible = category === 'all' || card.dataset.category === category;
                 card.hidden = !visible;
-                if (visible) visibleCount += 1;
             });
             projectFilters.forEach((filter) => {
                 const selected = filter === button;
                 filter.classList.toggle('is-selected', selected);
                 filter.setAttribute('aria-pressed', String(selected));
             });
-            projectCount.textContent = `${visibleCount} ${visibleCount === 1 ? 'project' : 'projects'}`;
+            updateProjectCount();
             scheduleNavigation();
         });
     });
 }
+
+window.addEventListener('portfolio:languagechange', () => {
+    updateThemeLabel();
+    updateProjectCount();
+    scheduleNavigation();
+});

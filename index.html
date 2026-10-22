@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+Arabic:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet"
     >
     <link rel="stylesheet" href="CSS/style.css">
@@ -42,13 +42,22 @@
                     <a href="#contact">Contact</a>
                 </nav>
 
-                <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
-                    <span class="theme-toggle-track">
-                        <span class="theme-toggle-label">Light</span>
-                        <span class="theme-toggle-thumb"></span>
-                        <span class="theme-toggle-label">Dark</span>
-                    </span>
-                </button>
+                <div class="appearance-controls">
+                    <div class="language-picker">
+                        <select class="language-select" aria-label="Choose language" autocomplete="off">
+                            <option value="en" lang="en">English</option>
+                            <option value="ps" lang="ps" dir="rtl">پښتو</option>
+                            <option value="fa-AF" lang="fa-AF" dir="rtl">دری</option>
+                        </select>
+                    </div>
+                    <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+                        <span class="theme-toggle-track">
+                            <span class="theme-toggle-label">Light</span>
+                            <span class="theme-toggle-thumb"></span>
+                            <span class="theme-toggle-label">Dark</span>
+                        </span>
+                    </button>
+                </div>
 
             </div>
         </header>
@@ -58,7 +67,6 @@
                 <div class="hero-copy reveal">
                     <span class="sticker sticker-edition">2026 Edition</span>
                     <span class="doodle doodle-cross hero-cross"></span>
-                    <span class="doodle doodle-swirl hero-swirl"></span>
 
                     <p class="eyebrow">Computer Science Graduate / Developer / IT Professional  </p>
                     <h1 class="hero-title">
@@ -78,6 +86,7 @@
                     <div class="hero-actions">
                         <a class="button button-primary" href="#contact">Let's Work Together</a>
                         <a class="button button-link" href="Files/Hijratullah%20CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
+                        <span class="doodle doodle-swirl hero-swirl" aria-hidden="true"></span>
                     </div>
                 </div>
 
@@ -589,6 +598,7 @@
         </a>
     </nav>
 
+    <script src="Scrift/languages.js"></script>
     <script src="Scrift/scrift.js"></script>
 </body>
 </html>
