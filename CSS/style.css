@@ -2395,6 +2395,17 @@ html[dir="rtl"] .appearance-controls {
     flex-shrink: 0;
 }
 
+.theme-icon {
+    display: none;
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
 .language-select {
     min-height: 46px;
     max-width: 112px;
@@ -2671,16 +2682,35 @@ a[href^="tel:"],
 }
 
 @media (max-width: 560px) {
-    .site-header { flex-wrap: wrap; }
-    .brand { flex-basis: 100%; }
-    .header-tools { width: 100%; justify-content: flex-end; gap: 10px; }
+    .site-header { flex-wrap: nowrap; gap: 8px; }
+    .brand { flex: 1 1 0; gap: 8px; }
+    .header-tools { width: auto; justify-content: flex-end; gap: 6px; }
     html[dir="rtl"] .header-tools { justify-content: flex-start; }
     .language-select { min-height: 44px; }
-    .language-trigger { min-height: 44px; }
-    html[dir="rtl"] .theme-toggle-track { width: 112px; }
-    html[dir="rtl"] .theme-toggle-thumb { width: 50px; }
-    html[dir="rtl"] body[data-theme="dark"] .theme-toggle-thumb { transform: translateX(54px); }
+    .language-trigger { width: 92px; min-height: 44px; padding-inline: 10px; gap: 6px; }
+    .language-menu { left: auto; right: 0; transform-origin: top right; }
+    html[dir="rtl"] .language-menu { left: 0; right: auto; transform-origin: top left; }
+    .theme-toggle {
+        display: grid;
+        place-items: center;
+        width: 44px;
+        height: 44px;
+        border: 1px solid var(--line);
+        border-radius: 50%;
+        background: var(--glass);
+        color: var(--text);
+        transition: background 180ms ease, border-color 180ms ease;
+    }
+    .theme-toggle:hover { background: var(--surface); }
+    .theme-toggle:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+    .theme-toggle-track { display: none; }
+    body[data-theme="light"] .theme-icon-light,
+    body[data-theme="dark"] .theme-icon-dark { display: block; }
     html[dir="rtl"] .hero-title { font-size: clamp(2.8rem, 12vw, 4rem); }
     main section[id],
-    #home { scroll-margin-top: 175px; }
+    #home { scroll-margin-top: 110px; }
+}
+
+@media (max-width: 400px) {
+    .brand-text { display: none; }
 }
